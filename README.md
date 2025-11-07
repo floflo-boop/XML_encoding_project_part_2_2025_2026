@@ -29,3 +29,6 @@ I have choose them because they are different in there physical and logical stru
 As described a little in the "My project" part, my approach is to propose a digital edition as well as a way of encoding those text. 
 
 So I tried to select the elements that seems to be pertient to propose a digital edition focused on make those sources exploitable more easily for lexical and linguistic studies as well as genalogical research. 
+
+
+_420 mots, à reduire !_
