@@ -32,3 +32,9 @@ So I tried to select the elements that seems to be pertient to propose a digital
 
 
 _420 mots, à reduire !_
+
+<br>
+
+# AI statement 
+
+No AI has been used for this part2.
