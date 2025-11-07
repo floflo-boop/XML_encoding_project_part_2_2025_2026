@@ -18,13 +18,16 @@
   </teiHeader>
   <text>
       <body>
-         <p>25 novembre 1914
             
-            Ma petite chérie 
+         <opener> <byline>[Envoi du cal Rosset-Bressand, C.H.R. du 218e]</byline>
+               
+               <date when="1914-11-25">25 novembre 1914</date>
             
-            Je reçois ta bonne carte à la « crème » en ce que la contre-carte est utilisable pour réponse : 
-            j’en ferai un fidèle usage mais aujourd’hui j’ai pu avoir la reproduction inédite d’une faible partie de la Basilique N.D. de Reims après exercice du jeu de massacre inventé par des bandits pour détruire le plus glorieux de nos temples sacrés, 
-            et je m’empresse de soumettre à tes yeux de Française ce spectacle créé par la sauvagerie Teutonne, ce résultat brillant de la Kultur germanique. 
+            <salute><name type="nickname" ana="he wrote to his wife">Ma petite chérie</name></salute> </opener>
+
+            <p> Je reçois ta bonne carte à la <unclear>« crème »</unclear> en ce que la contre-carte est utilisable pour réponse : 
+            j’en ferai un fidèle usage mais aujourd’hui j’ai pu avoir la reproduction inédite d’une faible partie de la Basilique <choice><abbr>N.D.</abbr><expan> Notre Dame </expan></choice> de Reims après exercice du jeu de massacre inventé par des bandits pour détruire le plus glorieux de nos temples sacrés, 
+            et je m’empresse de soumettre à tes yeux de Française ce spectacle créé par la <seg ana="propaganda expression">sauvagerie <w><choice><orig ana="propaganda word to barbarise German">Teutonne</orig><corr>Allemande</corr></choice></w></seg>, ce résultat brillant de la <w><choice><orig ana="propaganda word">Kultur</orig><corr>culture</corr></choice></w> <w><choice><orig ana="propaganda word to barbarise German">germanique</orig><corr>allemande</corr></choice></w>. 
             Il neige, il neige et ce n’est pas l’aigle de France qui courbe la tête ! 
             Non certes, on surmontera toutes les douleurs physiques et morales et une bonne heure, qui n’est pas loin, sonnera où l’aigle de Prusse s’abattra sans vie sur les champs de bataille qu’il a voulus.
             
@@ -41,7 +44,7 @@
 
 
 
-[Envoi du cal Rosset-Bressand, C.H.R. du 218e]
+
 
 
 

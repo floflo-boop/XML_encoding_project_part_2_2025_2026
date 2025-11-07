@@ -18,14 +18,13 @@
   </teiHeader>
   <text>
       <body>
-         <p>
-            Chalons en champagne 
+            <opener> <dateline> <name type="place"> Chalons en champagne </name> 
             
-            31 Août 1914 
+            <date> 31 Août 1914 </date> </dateline>
             
-            Ma chère Colette, 
+            <salute> Ma chère <name type="person">Colette</name>, </salute> </opener>
             
-            Je n'ai pas eu beaucoup de temps pour t'écrire, car nous bougeons enormément. 
+            <p> Je n'ai pas eu beaucoup de temps pour t'écrire, car nous bougeons enormément. 
             Après la défaite du 23 Août lors de la bataille des frontières dans les Voges, nous avons dû repartir dans la Marne. 
             Nous avons perdu beaucoup d'hommes et la marche a été très dure et très longue. Nous avons marché des jours durant pour finalement nous retrouver à nouveau sous une pluie de balle. 
             La fatigue, mais surtout la peur, sont difficiles à vivre. Pourtant, je reste calmesous le feu, je suis arrivé, c'est difficile de traverser tant de villages dévastés détruits, sans plus aucune vie. 

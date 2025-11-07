@@ -18,11 +18,12 @@
   </teiHeader>
   <text>
       <body>
-         <p>Marmande 23 décembre 1914
             
-            Mon cher Pierre
+            <opener> <dateline> <name type="place">Marmande</name> <date>23 décembre 1914</date> </dateline>            
             
-            C’est avec grand plaisir que j’ai reçu ta carte, au moment où nous étions en route pour Marmande où on nous a fait rentrer à pied en 7 étapes. 
+            <salute>Mon cher <name type="person">Pierre</name></salute> </opener>
+            
+            <p> C’est avec grand plaisir que j’ai reçu ta carte, au moment où nous étions en route pour Marmande où on nous a fait rentrer à pied en 7 étapes. 
             Ca a été dur mais on l’a fait quand même. Les Bleus 1915 sont partis dans un camp ; moi je reste ici encore avec des auxiliaires et d’anciens réformés que l’on instruit ; 
             je ne sais quand est-ce que j’irai au front, dans le courant Janvier probablement, on ira voir un peu ces Boches en attendant d’aller les combattre. 
             Hier j’étais de garde avec 12 poilus pour garder les prisonniers qui sont ici : ils ne se font pas trop de bile. 
