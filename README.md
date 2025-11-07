@@ -14,11 +14,11 @@ With thos two objective, I want to propose a way of making a digital edition, an
 
 # My materials 
 
-My materials is the same as the part1. I have choosen three letters from three different "poilus" and there still are the same sources. 
+I have choosen three letters from three different "poilus" and there still are the same sources. 
 
-Two letters are coming from the same archival collections, municipal archives of Reims. It is two different "poilus" who wrote them on the same front but 1 mont apart between november and december 1914. 
+Two letters are coming from the same archival collections, municipal archives of Reims. It is two different "poilus" who wrote them on the same front but 1 mont apart between november and december 1914. They are the same as part 1 assignment. 
 
-My third letter come from a different archival collections, the departmental archives of Puy-de-Dômes, and is written in september 1916 on a different front.  
+My third letters is a new one. The older one was not a "poilus" letters so I had to change. This one come from an undintefied "poilus" from the archive of the Manche departement. She's writtent in August 1914 at Chalons en Champagne in the Marne departement. I took it from a PDF which present different letters from different soldiers, I took the first one _(you will find the original PDF and a cropped one which present only the first letters.)_
 
 I have choose them because they are different in there physical and logical structure. But they still propose the same interest. 
 
