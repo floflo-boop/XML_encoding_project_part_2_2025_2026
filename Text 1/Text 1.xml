@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>25 novembre 1914
+            
+            Ma petite chérie 
+            
+            Je reçois ta bonne carte à la « crème » en ce que la contre-carte est utilisable pour réponse : 
+            j’en ferai un fidèle usage mais aujourd’hui j’ai pu avoir la reproduction inédite d’une faible partie de la Basilique N.D. de Reims après exercice du jeu de massacre inventé par des bandits pour détruire le plus glorieux de nos temples sacrés, 
+            et je m’empresse de soumettre à tes yeux de Française ce spectacle créé par la sauvagerie Teutonne, ce résultat brillant de la Kultur germanique. 
+            Il neige, il neige et ce n’est pas l’aigle de France qui courbe la tête ! 
+            Non certes, on surmontera toutes les douleurs physiques et morales et une bonne heure, qui n’est pas loin, sonnera où l’aigle de Prusse s’abattra sans vie sur les champs de bataille qu’il a voulus.
+            
+            Mon rhume est bien parti rejoindre ses ancêtres, mais je crois que la grippe le remplace avantageusement, je dois tenir cela de mon chef de service qui est malade et que je supplée tant bien que mal : 
+            d’où difficultés écrivatoires. Et puis le spleen nous ronge… la tristesse infinie d’une nature inerte qu’un manteau de neige et de glace a endormie, avec ce début grippal sont la cause de cet état d’esprit. 
+            J’ai reçu un nouveau colis de B. et Léontine (cigarettes, chocolat et machins pour genoux) avec un long affectueux billet autographe, je remercie. 
+            On tâche de se défendre contre le froid mais l’usure de nos frusques ne le permet pas toujours facilement. 
+            Bons baisers autour de toi et tout particulièrement à toi ma chérie de ton homme qui t’aime bien bien.
+         </p>
+      </body>
+  </text>
+</TEI>
+
+
+
+
+[Envoi du cal Rosset-Bressand, C.H.R. du 218e]
+
+
+
+https://www.reims.fr/la-culture-a-reims/archives-municipales-et-communautaires/dossier-thematique-guerre-1914-1918/1914-1918-ecrits-de-poilus
+
+https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/6_19141125_76S1_VERSO.jpg

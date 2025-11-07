@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>
+            Chalons en champagne 
+            
+            31 Août 1914 
+            
+            Ma chère Colette, 
+            
+            Je n'ai pas eu beaucoup de temps pour t'écrire, car nous bougeons enormément. 
+            Après la défaite du 23 Août lors de la bataille des frontières dans les Voges, nous avons dû repartir dans la Marne. 
+            Nous avons perdu beaucoup d'hommes et la marche a été très dure et très longue. Nous avons marché des jours durant pour finalement nous retrouver à nouveau sous une pluie de balle. 
+            La fatigue, mais surtout la peur, sont difficiles à vivre. Pourtant, je reste calmesous le feu, je suis arrivé, c'est difficile de traverser tant de villages dévastés détruits, sans plus aucune vie. 
+            Quand on marche, si le trajet est long on chante ou on se racontre des histoire, pour penser à autre chose. 
+            
+            Heureusement, je ne suis pas blessé et j'ai rencontré quelques camarades avec qui on peut parler, le grand Paul est là aussi d'ailleurs. 
+            Je vais bien, mais la vie de soldat est très dure. Nous sommes très mal nourris, seul le pain est (bon). 
+            Mes camarades sont blessés. Charles à été blessé à la jambe gauche, il est soigné à l'arrière. Je suis tellement triste à présent parcequ'il me soutenait tout le temps. 
+            
+            Nous seront bientôt réunis, car la guerre sera terminée dans quelques semaines. J'en suis sûr ! 
+            Est ce que Ernest et Marie vont bien ? T'aident-ils un peu à la maison ? As-tu des nouvelles du cousin Albert ? 
+            Donne-moi des nouvelles des soldats chers nous, je n'en ai pas revu beaucoup depuis que nous sommes partis ! 
+            
+            Fais bien attention aux enfants. 
+            Je vous embrasse tous tendrement 
+            Jacques, ton homme qui t'aime. </p>
+      </body>
+  </text>
+</TEI>
+
+
+
+https://www.manche.gouv.fr/contenu/telechargement/41367/291700/file/Lettres+soldats+scann%C3%A9es%281%29%282%29-1.pdf
