@@ -42,6 +42,7 @@
 
   - `<PhysDesc>` Description physique 
      - `<objectDesc>` Description de l'objet 
+       - `<supportDesc>`
       - `<handDesc>` Si il y a plusieurs main 
 
 ### Ajouts 

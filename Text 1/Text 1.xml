@@ -3,51 +3,118 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Digital edition of Léon Rosset-Bressand letter from 1914 november 25th. 76S1 Reims archives</title>
+            <author> Florian Martin</author>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p> not published.</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <msIdentifier>
+                  <country> France </country>
+                  <settlement> Reims </settlement>
+                  <institution> Archives municipales et communautaire de Reims</institution>
+                  <collection> 76S1 
+                     <idno type="URI">https://fonds-archives.reims.fr/4DCGI/Web_VoirLaNotice/03_06/76S1/ILUMP29806</idno> <!-- Link to the archives collections -->
+                  </collection>
+                  <idno type="URI">https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/6_19141125_76S1_VERSO.jpg</idno> <!-- link to the online source -->
+               </msIdentifier>
+               <history> 
+                  <p>
+                     Written in 1914 and sent the same year. Conservated by the family until 2009 where all those letters where donated to the Archives municipales et communautaires de Reims
+                  </p>
+               </history>
+               <msContents>
+                  <msItem>
+                     <docAuthor xml:id="author"> Léon Rosset-Bressant (<date type="birht">1886 april 30th at <placeName>Viennes</placeName></date> - <date type="death">1960 august 8th at <placeName> Archiac</placeName></date>) </docAuthor>
+                     <docDate when="1914-11-25" period="First Wolrd War"> 25 novembre 1914</docDate>
+                     <note> some additionnal stamp and handwritten marks are presents in this manuscript. Most of it is unidentifiable and undatable.</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support> 
+                           <material> letter paper </material>
+                           <stamp n="1"> a first stamp at the top right of the letter. partialy faded. postal stamp. date unclear </stamp>
+                           <stamp n="2"> a second stamp, located at the right of the first one. partialy faded. postal stamp. date unclear</stamp>
+                           <stamp n="3"> a third stamp located at the bottom right of the letter. It indicates that it belongs to the Reims archives. It was certainly added when it entered the institution's collection in 2009. </stamp>
+                           <watermark n="1"> "Carte Postale" watermak located at the middle and top of the letter. </watermark>
+                           <watermark n="2"> vertical line at the middle of the letter separating two fields </watermark>
+                           <watermark n="3" xml:id="watermark3"> "Correspondance" which indicate the first field. The body of the letter. Located at the left of the vertical line</watermark> <!-- this id will be used to locate the elements -->
+                           <watermark n="4" xml:id="watermark4"> "Adresse" which indicate the second field. Where we wrote the destination of the letter. Located at the left of the vertical line </watermark> <!-- this id will be used to locate the elements -->
+                        </support>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p> This manuscript is written by a single hand identify as the author. But there is an additionnal manuscript markup made by a second hand. This one is unidentified</p>
+                  </handDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
-      <body>
-            
-         <opener> <byline>[Envoi du cal Rosset-Bressand, C.H.R. du 218e]</byline>
-               
-               <date when="1914-11-25">25 novembre 1914</date>
-            
-            <salute><name type="nickname" ana="he wrote to his wife">Ma petite chérie</name></salute> </opener>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"> French </language>
+            <language ident="st"> Slang Trench</language>
+         </langUsage>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#author">Léon Rosset-Bressand</persName>
+               <date when="1914-11-25" period="First Wolrd War"> 25 novembre 1914</date>
+            </correspAction>
+            <!-- I did not add correspContext because letters are not online and I have no information about it. -->
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:lang="fr">
 
-            <p> Je reçois ta bonne carte à la <unclear>« crème »</unclear> en ce que la contre-carte est utilisable pour réponse : 
-            j’en ferai un fidèle usage mais aujourd’hui j’ai pu avoir la reproduction inédite d’une faible partie de la Basilique <choice><abbr>N.D.</abbr><expan> Notre Dame </expan></choice> de Reims après exercice du jeu de massacre inventé par des bandits pour détruire le plus glorieux de nos temples sacrés, 
-            et je m’empresse de soumettre à tes yeux de Française ce spectacle créé par la <seg ana="propaganda expression">sauvagerie <w><choice><orig ana="propaganda word to barbarise German">Teutonne</orig><corr>Allemande</corr></choice></w></seg>, ce résultat brillant de la <w><choice><orig ana="propaganda word">Kultur</orig><corr>culture</corr></choice></w> <w><choice><orig ana="propaganda word to barbarise German">germanique</orig><corr>allemande</corr></choice></w>. 
-            Il neige, il neige et ce n’est pas l’aigle de France qui courbe la tête ! 
-            Non certes, on surmontera toutes les douleurs physiques et morales et une bonne heure, qui n’est pas loin, sonnera où l’aigle de Prusse s’abattra sans vie sur les champs de bataille qu’il a voulus.
+         <opener>
+            <byline>
+               <add facs="#watermark4">[Envoi du <choice><abbr>cal</abbr><expan>caporal</expan></choice> <name type="author">Rosset-Bressand</name>, <choice><abbr>C.H.R.</abbr><expan ana="administrative section of army">Compagnie Hors Rang</expan></choice> du 218e]</add></byline>
+            <date when="1914-11-25" period="First Wolrd War" facs="#watermark4">25 novembre 1914</date>
+            <salute hand="#author" facs="#watermark3"><name type="nickname" ana="he wrote to his wife">Ma petite chérie</name></salute>
+         </opener>
+         
+         
+
+         <div n="1" ana="war news" hand="#author" facs="#watermark3">
+            <p ana="propaganda informations">Je reçois ta bonne carte à la <unclear>« crème »</unclear> en ce que la contre-carte
+               est utilisable pour réponse : j’en ferai un fidèle usage mais aujourd’hui j’ai pu
+               avoir la reproduction inédite d’une faible partie de la Basilique <choice><abbr>N.D.</abbr><expan> Notre Dame </expan>
+               </choice> de Reims après exercice du jeu de massacre inventé par des bandits pour
+               détruire le plus glorieux de nos temples sacrés, et je m’empresse de soumettre à tes
+               yeux de Française ce spectacle créé par la <seg ana="propaganda expression">sauvagerie <w><choice><orig ana="propaganda word to barbarise German">Teutonne</orig><corr>Allemande</corr></choice></w></seg>
+               , ce résultat brillant de la <w><choice><orig ana="propaganda word">Kultur</orig><corr>culture</corr></choice></w>
+               <w><choice><orig ana="propaganda word to barbarise German">germanique</orig><corr>allemande</corr></choice></w>. 
+               Il neige, il neige et ce n’est pas l’aigle de France qui courbe la
+               tête ! Non certes, on surmontera toutes les douleurs physiques et morales et une
+               bonne heure, qui n’est pas loin, sonnera où l’aigle de Prusse s’abattra sans vie sur
+               les champs de bataille qu’il a voulus.</p>
+         </div>
+
+         <div n="2" ana="health and life" hand="#author" facs="#watermark3">
+            <p>Mon rhume est bien parti rejoindre ses ancêtres, mais je crois que la grippe le
+               remplace avantageusement, je dois tenir cela de mon chef de service qui est malade et
+               que je supplée tant bien que mal : d’où difficultés écrivatoires. Et puis <w><choice><orig ana="no more in use">le spleen</orig><corr>la mélancolie</corr></choice></w>
+               nous ronge… la tristesse infinie d’une nature inerte qu’un manteau de neige et de
+               glace a endormie, avec ce début grippal sont la cause de cet état d’esprit. J’ai reçu
+               un nouveau colis de <name type="abbreviation">B.</name> et <name>Léontine</name> (cigarettes, chocolat et <unclear xml:lang="st">machins</unclear> pour genoux) avec
+               un long affectueux billet autographe, je remercie. On tâche de se défendre contre le
+               froid mais l’usure de nos <name xml:lang="st"><choice><orig>frusques</orig><corr>vieux habits</corr></choice></name> ne le permet pas toujours facilement.</p>
             
-            Mon rhume est bien parti rejoindre ses ancêtres, mais je crois que la grippe le remplace avantageusement, je dois tenir cela de mon chef de service qui est malade et que je supplée tant bien que mal : 
-            d’où difficultés écrivatoires. Et puis le spleen nous ronge… la tristesse infinie d’une nature inerte qu’un manteau de neige et de glace a endormie, avec ce début grippal sont la cause de cet état d’esprit. 
-            J’ai reçu un nouveau colis de B. et Léontine (cigarettes, chocolat et machins pour genoux) avec un long affectueux billet autographe, je remercie. 
-            On tâche de se défendre contre le froid mais l’usure de nos frusques ne le permet pas toujours facilement. 
-            Bons baisers autour de toi et tout particulièrement à toi ma chérie de ton homme qui t’aime bien bien.
-         </p>
+            <closer> Bons baisers autour de toi et tout particulièrement à toi <name type="nickname"
+                  ana="he wrote to his wife">ma chérie</name> de ton homme qui t’aime bienbien.</closer>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>
 
 
 
 
-
-
-
-
-https://www.reims.fr/la-culture-a-reims/archives-municipales-et-communautaires/dossier-thematique-guerre-1914-1918/1914-1918-ecrits-de-poilus
-
-https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/6_19141125_76S1_VERSO.jpg
