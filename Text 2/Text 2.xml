@@ -90,7 +90,8 @@
                <byline> P. Hêche caporal 20e d'infanterie 30e compagnie <placeName ref="#Mar">Marmande</placeName> </byline>
                <dateline> <placeName ref="#Mar">Marmande</placeName> <date when="1914-12-23">23 décembre 1914</date> </dateline>            
             
-            <salute>Mon cher <name ref="#PCZ">Pierre</name></salute> 
+               <salute>Mon cher <name ref="#PCZ">Pierre</name></salute> 
+            
             </opener>
             
             <p> C’est avec grand plaisir que j’ai reçu ta carte, au moment où nous étions en route pour <placeName ref="#Mar">Marmande</placeName> où on nous a fait rentrer à pied en 7 étapes. 
