@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listPlace>
+    <place type= "region" xml:id="Char_inf">
+        <placeName> Charentes Inférieure</placeName>
+        <location>
+            <geo> 45.75556 -0.71314</geo>
+        </location>
+        <idno type="wikidata">Q3278</idno>
+    </place>
+
+    <place type="village" xml:id="Arch">
+        <placeName> Archiac </placeName>
+        <location>
+            <geo> 45.52248 -0.30157 </geo>
+        </location>
+        <idno type="wikidata">Q471995</idno>
+    </place>
+
+    <place type="domain" xml:id="Men">
+        <placeName> La Ménarderie </placeName>
+        <location>
+            <geo> GMGX+8P Archiac </geo>
+        </location>
+        <note> No more in the family. Commercial adress nowadays.</note>
+    </place>
+
+
+    <place xml:id="Rei">
+        <placeName type="city"> Reims </placeName>
+        <location>
+            <geo> 49.26526 4.02853 </geo>
+        </location>
+        <idno type="wikidata">Q41876</idno>
+    </place>
+    
+    <place xml:id="Mar">
+        <placeName type="village"> Marmande </placeName>
+        <location>
+            <geo> 44.50361 0.16546 </geo>
+        </location>
+        <idno type="wikidata">Q210742</idno>
+    </place>
+    
+    <place xml:id="Mont">
+        <placeName type="city"> Montélimar</placeName>
+        <location>
+            <geo> 44.55468 4.75469 </geo>
+        </location>
+        <idno type="wikidata"> Q234270 </idno>
+    </place>
+    
+</listPlace>

@@ -2,43 +2,114 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE TEI [
+    <!ENTITY listPerson SYSTEM "list_person.xml"> 
+   
+    <!ENTITY listPlace SYSTEM "list_place.xml">
+
+]> <!-- Declaration of a external entity which contain biographical description of person and list of places. -->
+
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Digital edition of P.Hêche. Letter of the 1914 december 23rd to friend Pierre Cuzin </title>
+            <author> Florian Martin</author>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <msIdentifier>
+                  <country> France </country>
+                  <settlement> Reims </settlement>
+                  <institution> Archives municipales et communautaire de Reims</institution>
+                  <idno type="URI">https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/6_19141125_76S1_VERSO.jpg</idno> <!-- link to the online source -->
+                  <!-- No element <collection> because i have found no information about it. -->
+               </msIdentifier>
+               <history> 
+                  <p>
+                     Written and sent in 1914. Conserved by the family until an unknow date. The letter entered the Archives municipales et communautaires de Reims at an unkow date and in unknow condition
+                  </p>
+               </history>
+               <msContents>
+                  <msItem>
+                     <docAuthor ref="#PHE"> P.Hêche </docAuthor>
+                     <docDate when="1914-12-23" period="First Wolrd War"> 23 december 1914</docDate>
+                     <note> No watermak or stamp. Some degradations are seen but it does not impact the lecture</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support> 
+                           <material> Letter </material>
+                        </support>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p> This manuscript is written by a single hand identify as the author. No additions are visible</p>
+                  </handDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="fr"> French </language>
+           <language ident="st"> Slang Trench</language>
+        </langUsage>
+        <particDesc>
+           &listPerson; <!-- Insertion of the external list of person -->
+        </particDesc>
+        
+        <settingDesc>
+           &listPlace; <!-- Insetion of the external list of places -->
+        </settingDesc>
+        
+        <correspDesc>
+           <correspAction type="sent">
+              <persName ref="#PHE"> P.Hêche </persName>
+              <date when="1914-12-23"> 23 december 1914</date>
+           </correspAction>
+           <correspContext>
+              <ptr type="previous" subtype="toRecipient" target="https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/14_19141220_50S1_VERSO.jpg"/>
+              <ptr type="next" subtype="toRecipient"/>
+              <note> We have no tracks of the responses from <persName ref="#PCZ">Pierre Cuzin</persName>. No exchanges are following this one.</note>
+           </correspContext>
+        </correspDesc>
+     </profileDesc>
   </teiHeader>
   <text>
-      <body>
+      <body xml:lang="fr">
             
-            <opener> <dateline> <name type="place">Marmande</name> <date>23 décembre 1914</date> </dateline>            
+            <opener> 
+               <byline> P. Hêche caporal 20e d'infanterie 30e compagnie <placeName ref="#Mar">Marmande</placeName> </byline>
+               <dateline> <placeName ref="#Mar">Marmande</placeName> <date when="1914-12-23">23 décembre 1914</date> </dateline>            
             
-            <salute>Mon cher <name type="person">Pierre</name></salute> </opener>
+            <salute>Mon cher <name ref="#PCZ">Pierre</name></salute> 
+            </opener>
             
-            <p> C’est avec grand plaisir que j’ai reçu ta carte, au moment où nous étions en route pour Marmande où on nous a fait rentrer à pied en 7 étapes. 
-            Ca a été dur mais on l’a fait quand même. Les Bleus 1915 sont partis dans un camp ; moi je reste ici encore avec des auxiliaires et d’anciens réformés que l’on instruit ; 
-            je ne sais quand est-ce que j’irai au front, dans le courant Janvier probablement, on ira voir un peu ces Boches en attendant d’aller les combattre. 
-            Hier j’étais de garde avec 12 poilus pour garder les prisonniers qui sont ici : ils ne se font pas trop de bile. 
-            Ils sont peut-être plus heureux ici que là-bas. Gillet est à Montélimar. Tes parents m’ont écrit ils vont bien. Des autres copains je n’en ai pas de nouvelles.
-            J’ai écrit à Devize. Quelle tête fait-on quand les balles sifflent aux oreilles ? il vaudrait mieux faire sauter le champagne au pied de la croix avec Truffy ? 
+            <p> C’est avec grand plaisir que j’ai reçu ta carte, au moment où nous étions en route pour <placeName ref="#Mar">Marmande</placeName> où on nous a fait rentrer à pied en 7 étapes. 
+            Ca a été dur mais on l’a fait quand même. 
+            <choice><orig><s xml:lang="st" ana="Les Bleus is a reference to military close specially given to french soldiers engaged in 1915.">Les Bleus 1915</s></orig><reg> Les soldats français envoyés au front en 1915</reg></choice> sont partis dans un camp ; moi je reste ici encore avec des auxiliaires et d’anciens réformés que l’on instruit ; 
+            je ne sais quand est-ce que j’irai au front, dans le courant Janvier probablement, on ira voir un peu ces <choice><orig><name xml:lang="st">Boches</name></orig><reg>Allemands</reg></choice> en attendant d’aller les combattre. 
+            Hier j’étais de garde avec 12 <choice><orig><name xml:lang="st">poilus</name></orig><reg>soldats français</reg></choice> pour garder les prisonniers qui sont ici : 
+            ils ne se font pas trop de <choice><orig><name xml:lang="st">bile</name></orig><reg> soucis </reg></choice>. 
+            Ils sont peut-être plus heureux ici que là-bas. <persName>Gillet</persName> est à <placeName ref="#Mont">Montélimar</placeName>. 
+            Tes parents m’ont écrit ils vont bien. Des autres copains je n’en ai pas de nouvelles.
+            J’ai écrit à <persName>Devize</persName>. Quelle tête fait-on quand les balles sifflent aux oreilles ? <unclear>il vaudrait mieux faire sauter le champagne au pied de la croix avec Truffy ?</unclear> 
             ou bien encore voler une jeune poule bien tendre à tes parents ! Enfin ce temps reviendra peut-être ;
-            je te souhaite une bonne année, démolis les Boches mais ne te fais pas choper, c’est la principale des choses. 
-            En attendant le plaisir de te relire, donne le bonjour à Louis quand tu lui écriras et reçois avec mes souhaits de bonne année une cordiale poignée de main, ton camarade.
+            je te souhaite une bonne année, démolis les <choice><orig><name xml:lang="st">Boches</name></orig><reg>Allemands</reg></choice> mais ne te fais pas <choice><orig><name xml:lang="st">choper</name></orig><reg> attraper </reg></choice>, c’est la principale des choses.</p> 
             
-            P. Hêche caporal 20e d'infanterie 30e compagnie Marmande</p>
+               
+            <closer>En attendant le plaisir de te relire, donne le bonjour à <persName>Louis</persName> quand tu lui écriras et reçois avec mes souhaits de bonne année une cordiale poignée de main, ton camarade.</closer>
+       
       </body>
   </text>
 </TEI>
 
 
-https://www.reims.fr/la-culture-a-reims/archives-municipales-et-communautaires/dossier-thematique-guerre-1914-1918/1914-1918-ecrits-de-poilus
-
-https://www.reims.fr/fileadmin/reims/MEDIA/09_La_culture_a_reims/Archives_municipales/Guerre_14-18_Expo/galerie_images_2/temoignages/15_19141223_50S1_VERSO.jpg

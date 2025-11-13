@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="persons">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of Persons related to Léon Rosset-Bressand</title>
+                <author>Florian Martin</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Unpublished</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>List of people mentioned in letters by Léon Rosset-Bressand</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="LRB">
+                    <persName>Léon Rosset-Bressand</persName>
+                    <birth when="1886-04-30">
+                        <placeName>Vienne</placeName>
+                    </birth>
+                    <death when="1960-08-08">
+                        <placeName>Archiac</placeName>
+                    </death>
+                    <socecStatus>
+                        married to <persName ref="#LRB_wife">Anne Marie Suzanne Jeanne Madeleine DE LARQUIER</persName>
+                    </socecStatus>
+                </person>
+                
+                <person xml:id="LRB_wife">
+                    <persName>Anne Marie Suzanne Jeanne Madeleine DE LARQUIER</persName>
+                    <birth when="1890-11-18">
+                        <placeName>Archiac</placeName>
+                    </birth>
+                    <death when="1979-10-19">
+                        <placeName>Jonzac</placeName>
+                    </death>
+                    <socecStatus>
+                        married to <persName ref="#LRB">Léon Rosset-Bressand</persName>
+                    </socecStatus>
+                </person>
+            </listPerson>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listPerson>
+    <person xml:id="LRB">
+        <persName> Léon Rosset-Bressand</persName>
+        <birth when="1886-04-30">
+            <date>1886 april 30th</date>
+            <placeName> Vienne </placeName>
+        </birth>
+        <death when="1960-08-08">
+            <date>1960 august 8th</date>
+            <placeName> Archiac </placeName>
+        </death>
+        <socecStatus> married to <persName ref="#LRB_wife">Anne Marie Suzanne Jeanne Madeleine DE LARQUIER </persName></socecStatus>
+    </person>
+    
+    <person xml:id="LRB_wife">
+        <persName> Anne Marie Suzanne Jeanne Madeleine DE LARQUIER </persName>
+        <birth>
+            <date when="1890-11-18">1890 november 18th</date>
+            <placeName> Archiac </placeName>
+        </birth>
+        <death>
+            <date when="1979-10-19"> 1979 october 19th </date>
+            <placeName> Jonzac </placeName>
+        </death>
+        <socecStatus> married to <persName ref="#LRB">Léon Rosset-Bressand</persName></socecStatus>
+    </person>
+
+    <person xml:id="PHE">
+        <persName> P.Heche</persName>
+        <note> No information about him. He is unidentified by the institutions.</note>
+    </person>
+    
+    <person xml:id="PCZ">
+        <persName> Pierre Cuzin </persName>
+        <note> No information about him. He is unidentified by the institutions.</note>
+    </person>
+
+
+</listPerson>

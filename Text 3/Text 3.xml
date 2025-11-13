@@ -2,6 +2,17 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+
+<!DOCTYPE TEI [
+    <!ENTITY listPerson SYSTEM "list_person.xml"> 
+   
+    <!ENTITY listPlace SYSTEM "list_place.xml">
+
+]> <!-- Declaration of a external entity which contain biographical description of person and list of places. -->
+
+
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -15,6 +26,27 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="fr"> French </language>
+           <language ident="st"> Slang Trench</language>
+        </langUsage>
+        <particDesc>
+           &listPerson; <!-- Insertion of the external list of person -->
+        </particDesc>
+        
+        <settingDesc>
+           &listPlace; <!-- Insetion of the external list of places -->
+        </settingDesc>
+        
+        <correspDesc>
+           <correspAction type="sent">
+              <persName ref="#LRB">Léon Rosset-Bressand</persName>
+              <date when="1914-11-25" period="First Wolrd War"> 25 novembre 1914</date>
+           </correspAction>
+           <!-- I did not add correspContext because letters are not online and I have no information about it. -->
+        </correspDesc>
+     </profileDesc>
   </teiHeader>
   <text>
       <body>
