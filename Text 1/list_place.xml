@@ -34,5 +34,20 @@
         <idno type="wikidata">Q41876</idno>
     </place>
     
+    <place xml:id="Mar">
+        <placeName type="village"> Marmande </placeName>
+        <location>
+            <geo> 44.50361 0.16546 </geo>
+        </location>
+        <idno type="wikidata">Q210742</idno>
+    </place>
+    
+    <place xml:id="Mont">
+        <placeName type="city"> Montélimar</placeName>
+        <location>
+            <geo> 44.55468 4.75469 </geo>
+        </location>
+        <idno type="wikidata"> Q234270 </idno>
+    </place>
     
 </listPlace>
