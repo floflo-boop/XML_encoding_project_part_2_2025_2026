@@ -50,4 +50,28 @@
         <idno type="wikidata"> Q234270 </idno>
     </place>
     
+    <place xml:id="Chal">
+        <placeName type="city"> Châlons-en-Champagne</placeName>
+        <location>
+            <geo> 48.95393 4.36724 </geo>
+        </location>
+        <idno type="wikidata"> Q47135 </idno>
+    </place>
+    
+    <place xml:id="Marne">
+        <placeName type="department"> la Marne</placeName>
+        <location>
+            <geo> 48.99116 4.25966 </geo>
+        </location>
+        <idno type="wikidata"> Q12594 </idno>
+    </place>
+  
+    <place xml:id="Vos">
+        <placeName type="department"> Les Vosges</placeName>
+        <location>
+            <geo> 48.19161, 6.40533 </geo>
+        </location>
+        <idno type="wikidata"> Q3105 </idno>
+    </place>
+
 </listPlace>

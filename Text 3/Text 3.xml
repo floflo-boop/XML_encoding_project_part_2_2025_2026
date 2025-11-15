@@ -9,74 +9,136 @@
    
     <!ENTITY listPlace SYSTEM "list_place.xml">
 
-]> <!-- Declaration of a external entity which contain biographical description of person and list of places. -->
+]> <!-- Declaration of a external entity which contain biographical description of person and list of places -->
 
 
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Digital edition of a "Poilus". Letter of the 1914 august 31th to his wife </title>
+            <author> Florian Martin</author>
+            <respStmt>
+               <persName>Florian Martin </persName>
+               <resp> Encoding </resp>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher> Florian Martin </publisher>
+            <pubPlace> Paris, France</pubPlace>
+            <date when="2025"> 2025 </date>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <msDesc>
+               <msIdentifier>
+                  <country> France </country>
+                  <settlement> Unknow </settlement>
+                  <!-- found no data about it -->
+                  <institution> Unknow </institution>
+                  <!-- found no data about it -->
+                  <idno type="URI"
+                     >https://www.manche.gouv.fr/contenu/telechargement/41367/291700/file/Lettres+soldats+scann%C3%A9es%281%29%282%29-1.pdf</idno>
+                  <!-- link to the online source. See the first letter -->
+                  <!-- No element <collection> because i have found no information about it. -->
+               </msIdentifier>
+               <history>
+                  <p> Written and sent in 1914. Because it was not found on online archives, we have
+                     no informations about the history of the source. </p>
+               </history>
+               <msContents>
+                  <msItem>
+                     <docAuthor ref="#JAC"> Jacques </docAuthor>
+                     <docDate when="1914-08-31" period="First Wolrd War"> 1914 august 31th</docDate>
+                     <note> No watermak or stamp. No degradations. The envelope was not kept and we
+                        lost all the information it contained.</note>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material> Paper </material>
+                        </support>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p> This manuscript is written by a single hand identify as the author. No
+                        additions are visible</p>
+                  </handDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
-     <profileDesc>
-        <langUsage>
-           <language ident="fr"> French </language>
-           <language ident="st"> Slang Trench</language>
-        </langUsage>
-        <particDesc>
-           &listPerson; <!-- Insertion of the external list of person -->
-        </particDesc>
-        
-        <settingDesc>
-           &listPlace; <!-- Insetion of the external list of places -->
-        </settingDesc>
-        
-        <correspDesc>
-           <correspAction type="sent">
-              <persName ref="#LRB">Léon Rosset-Bressand</persName>
-              <date when="1914-11-25" period="First Wolrd War"> 25 novembre 1914</date>
-           </correspAction>
-           <!-- I did not add correspContext because letters are not online and I have no information about it. -->
-        </correspDesc>
-     </profileDesc>
-  </teiHeader>
-  <text>
-      <body>
-            <opener> <dateline> <name type="place"> Chalons en champagne </name> 
-            
-            <date> 31 Août 1914 </date> </dateline>
-            
-            <salute> Ma chère <name type="person">Colette</name>, </salute> </opener>
-            
-            <p> Je n'ai pas eu beaucoup de temps pour t'écrire, car nous bougeons enormément. 
-            Après la défaite du 23 Août lors de la bataille des frontières dans les Voges, nous avons dû repartir dans la Marne. 
-            Nous avons perdu beaucoup d'hommes et la marche a été très dure et très longue. Nous avons marché des jours durant pour finalement nous retrouver à nouveau sous une pluie de balle. 
-            La fatigue, mais surtout la peur, sont difficiles à vivre. Pourtant, je reste calmesous le feu, je suis arrivé, c'est difficile de traverser tant de villages dévastés détruits, sans plus aucune vie. 
-            Quand on marche, si le trajet est long on chante ou on se racontre des histoire, pour penser à autre chose. 
-            
-            Heureusement, je ne suis pas blessé et j'ai rencontré quelques camarades avec qui on peut parler, le grand Paul est là aussi d'ailleurs. 
-            Je vais bien, mais la vie de soldat est très dure. Nous sommes très mal nourris, seul le pain est (bon). 
-            Mes camarades sont blessés. Charles à été blessé à la jambe gauche, il est soigné à l'arrière. Je suis tellement triste à présent parcequ'il me soutenait tout le temps. 
-            
-            Nous seront bientôt réunis, car la guerre sera terminée dans quelques semaines. J'en suis sûr ! 
-            Est ce que Ernest et Marie vont bien ? T'aident-ils un peu à la maison ? As-tu des nouvelles du cousin Albert ? 
-            Donne-moi des nouvelles des soldats chers nous, je n'en ai pas revu beaucoup depuis que nous sommes partis ! 
-            
-            Fais bien attention aux enfants. 
-            Je vous embrasse tous tendrement 
-            Jacques, ton homme qui t'aime. </p>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"> French </language>
+            <language ident="st"> Slang Trench</language>
+         </langUsage>
+         <particDesc> &listPerson; <!-- Insertion of the external list of person -->
+         </particDesc>
+
+         <settingDesc> &listPlace; <!-- Insetion of the external list of places -->
+         </settingDesc>
+
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#JAC">Jacques</persName>
+               <date when="1914-08-31" period="First Wolrd War"> 1914 august 31th</date>
+            </correspAction>
+            <!-- I did not add correspContext because letters are not online and I have no information about it. -->
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body xml:lang="fr">
+         <opener>
+            <dateline>
+               <placeName ref="#Chal">Chalons en champagne</placeName>
+               <date when="1914-08-31"> 31 Août 1914 </date>
+            </dateline>
+            <salute>
+               <persName ref="#COL">Ma chère Colette</persName>, </salute>
+         </opener>
+
+         <div n="1" ana="war news" hand="#JAC">
+            <p> Je n'ai pas eu beaucoup de temps pour t'écrire, car nous bougeons enormément. Après
+                  <eventName>la défaite du <date when="1914-08-23">23 Août</date> lors de <eventName
+                     period="First World War" ref="https://www.wikidata.org/wiki/Q687572">la
+                     bataille des frontières</eventName> dans <placeName ref="#Vos">les
+                     Voges</placeName></eventName>, nous avons dû repartir dans <placeName
+                  ref="#Marne">la Marne</placeName>. Nous avons perdu beaucoup d'hommes et la marche
+               a été très dure et très longue. Nous avons marché des jours durant pour finalement
+               nous retrouver à nouveau sous une pluie de balle. La fatigue, mais surtout la peur,
+               sont difficiles à vivre. Pourtant, je reste <choice>
+                  <orig>calmesous</orig>
+                  <reg> calme sous </reg>
+               </choice> le feu, je suis arrivé, c'est difficile de traverser tant de villages
+               dévastés détruits, sans plus aucune vie. Quand on marche, si le trajet est long on
+               chante ou on se racontre des histoire, pour penser à autre chose. Heureusement, je ne
+               suis pas blessé et j'ai rencontré quelques camarades avec qui on peut parler,
+                  <persName type="unknow">le grand Paul</persName> est là aussi d'ailleurs. Je vais
+               bien, mais la vie de soldat est très dure. Nous sommes très mal nourris, seul le pain
+               est (bon). Mes camarades sont blessés. <persName type="unknow">Charles</persName> à
+               été blessé à la jambe gauche, il est soigné à l'arrière. Je suis tellement triste à
+               présent parcequ'il me soutenait tout le temps.</p>
+         </div>
+
+         <div n="2" ana="ask family and home news" hand="#JAC">
+            <p> Nous seront bientôt réunis, car <eventName ana="First World War">la
+                  guerre</eventName> sera terminée dans quelques semaines. J'en suis sûr ! Est ce
+               que <persName type="children">Ernest</persName> et <persName type="children"
+                  >Marie</persName> vont bien ? T'aident-ils un peu à la maison ? As-tu des
+               nouvelles du cousin <persName type="cousins">Albert</persName> ? Donne-moi des
+               nouvelles des soldats <choice>
+                  <orig>chers</orig>
+                  <corr>chez</corr>
+               </choice> nous, je n'en ai pas revu beaucoup depuis que nous sommes partis ! Fais
+               bien attention aux enfants. Je vous embrasse tous tendrement </p>
+         </div>
+
+
+         <closer><persName ref="#JAC">Jacques</persName>, ton homme qui t'aime.</closer>
       </body>
-  </text>
+   </text>
 </TEI>
-
-
-
-https://www.manche.gouv.fr/contenu/telechargement/41367/291700/file/Lettres+soldats+scann%C3%A9es%281%29%282%29-1.pdf

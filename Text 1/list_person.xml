@@ -37,5 +37,16 @@
         <note> No information about him. He is unidentified by the institutions.</note>
     </person>
 
+    <person xml:id="JAC">
+        <persName> Jacques </persName>
+        <note> No information about him. He is unidentified.</note>
+        <socecStatus> married to <persName ref="#COL">Colette</persName></socecStatus>
+    </person>
+    
+    <person xml:id="COL">
+        <persName> Colette </persName>
+        <note> No information about her. She is unidentified by the institutions.</note>
+        <socecStatus> married to <persName ref="#COL">Colette</persName></socecStatus>
+    </person>
 
 </listPerson>
