@@ -29,3 +29,12 @@ With the TEI, I had to play a lot with attributes and TEI_all not alway provide 
 
 In the TEI_all i was not able to add, as external entiti, a list of events that will allow me to make references to historical envents and context. I tried and the implementation of it has been impossible. 
 
+<br>
+
+## The custom TEI schema 
+
+I hope that a TEI custom schema will allow me to insert more easily, by external means or note, a list of events. It can really be a great point for my encoding to have a detail list of events and even subevents linked to my files in order to enrich my sources. 
+
+More generally, I hop to build a TEI custom schema which can have a form of balance between the overly general nature of TEI_all, which guarantees flexibility, and the overspecialization of my DTD. Maybe by adding more specialized element and keeping the richness in attribute. 
+
+<br>
